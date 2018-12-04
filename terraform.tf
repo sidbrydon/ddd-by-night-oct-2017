@@ -5,12 +5,12 @@ provider "aws" {
 
 variable "website_name" {
     type = "string"
-    description = "Name of the S3 bucket and website to create, e.g. 'hello-world.com'"
+    description = "Name of the S3 bucket and website to create, e.g. 'sidbrydon-test01.com'"
 
     #####################################
     #IMPORTANT: Set this to the name you want for the S3 bucket that our terraform will create!
     #####################################
-    default = "hello-world.com"
+    default = "sidbrydon-test01.com"
 }
 
 terraform {
@@ -22,7 +22,7 @@ terraform {
     #IMPORTANT: Set this to the name of an EXISTING S3 bucket in your AWS account.
     #Terraform will use this to store information about your infrastructure so it knows what to create/update/delete when you apply changes.
     #####################################
-    bucket = "chrislewisdev-terraform"
+    bucket = "sidbryd-terraform"
   }
 }
 
